@@ -1,4 +1,4 @@
-# Data_Warehouse_design. 
+# Data Warehouse Design. 
 ## A good data warehouse design involves:
 ### 1. Understanding the business goals
 ### 2. Identify relevant data sources.
