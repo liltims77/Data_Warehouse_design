@@ -10,7 +10,7 @@
  8. Managing data quality and performance overtime
 
 ## Introduction
-This is a datawarehouse project that involves the design of efficient data models for both analytical and operational needs.
+This is a datawarehouse project that involves the design of efficient data models that can jandle both analytical and operational needs.
 ## Architecture
 
 ## Technology Used
