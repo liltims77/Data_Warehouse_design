@@ -50,4 +50,4 @@ hours.
    - Load fact table using foreign keys from dimension table
  
 ## ETL SCRIPT
-https://github.com/liltims77/Data_Warehouse_design/blob/main/ETL_SCRIPTS.md
+
