@@ -6,7 +6,7 @@
  4. Create data warehouse design schema.
  5. Plan the ETL process for dataware house design.
  6. Choose approporiate hardware and software tools.
- 7 Deploy and maintain the data warehouse.
+ 7. Deploy and maintain the data warehouse.
  8. Managing data quality and performance overtime
 
 ## Introduction
