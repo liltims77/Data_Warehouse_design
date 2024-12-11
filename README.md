@@ -34,6 +34,8 @@ hours.
    - check and clean columns for invalid or missing data
    - Normalize names of columns for consistency
    - model data into Fact and Dimension tables
+     The fact_allocations table is a central component of the data warehouse, created by combining raw data from the source dataset with dimension tables to enrich the information. The process involves merging the raw data with the dim_team_member table to associate   team members and their roles, and with the dim_project table to include project and client details. This integration ensures the fact table contains both raw metrics and dimensional attributes, enabling consistent, enriched, and query-ready data for analytical purposes. The fact_allocations table serves as the foundation for the star schema design, supporting efficient data analysis and reporting.
+     
 3. Load data into the data warehouse
    - Populate dimension tables
    - Load fact table using foreign keys from dimension table
