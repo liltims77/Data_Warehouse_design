@@ -12,6 +12,7 @@
 ## Introduction
 This is a datawarehouse project that involves the design of efficient data models for both analytical and operational needs.
 ## Architecture
-The ETL process was done using Python in jupyter notebook and then loaded into the Postgres database. 
+
 ## Technology Used
+The ETL process was done using Python in jupyter notebook and then loaded into the Postgres database. 
 - Programming Language - Python
