@@ -26,3 +26,9 @@ like team member name, task name, project name, date, hours logged, and billable
 hours.
 
 ## Dimension model for data (star schema)
+
+## ETL Process
+1. Extract data from the two datasets.
+2. Transform data to ensure consistency
+3. model data into Fact and Dimension tables
+4. Load data into the data warehouse
