@@ -18,9 +18,9 @@ The ETL process was done using Python in jupyter notebook and then loaded into t
 - Programming Language - Python
 
 ## Dataset used
-Float Data: This dataset contains staffing and allocation information for projects,
+- Float Data: This dataset contains staffing and allocation information for projects,
 including details like team member name, project name, role, estimated hours, and
 project dates.
-ClickUp Data: This dataset contains task and time tracking information, including details
+- ClickUp Data: This dataset contains task and time tracking information, including details
 like team member name, task name, project name, date, hours logged, and billable
 hours.
