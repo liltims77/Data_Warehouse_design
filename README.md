@@ -48,3 +48,5 @@ hours.
 3. Load data into the data warehouse
    - Populate dimension tables
    - Load fact table using foreign keys from dimension table
+ 
+## ETL SCRIP
