@@ -30,5 +30,10 @@ hours.
 ## ETL Process
 1. Extract data from the two datasets.
 2. Transform data to ensure consistency
-3. model data into Fact and Dimension tables
-4. Load data into the data warehouse
+   - Drop duplicates and reset index
+   - check and clean columns for invalid or missing data
+   - Normalize names of columns for consistency
+   - model data into Fact and Dimension tables
+3. Load data into the data warehouse
+   - Populate dimension tables
+   - Load fact table using foreign keys from dimension table
