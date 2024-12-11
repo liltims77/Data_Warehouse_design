@@ -24,3 +24,5 @@ project dates.
 - ClickUp Data: This dataset contains task and time tracking information, including details
 like team member name, task name, project name, date, hours logged, and billable
 hours.
+
+## Dimension model for data (star schema)
