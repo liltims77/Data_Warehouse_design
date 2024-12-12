@@ -2235,6 +2235,38 @@ Simple, scalable, and easy to understand for non-technical users.
 
 
 
+ ## Entity-Relationship Diagram (Operational Model)
+The ERD is designed for operational purposes, providing a normalized view of the data to support daily operations.
+
+## Entities and Relationships:
+1. Entities:
+. TeamMember: Attributes include Team_Member_ID, name, role.
+. Task: Attributes include Task_ID, task, billable.
+. Project: Attributes include Project_ID, client, project.
+. Date: Attributes include Date_ID, date, Year, Month, Week, Day, Quarter.
+2. Relationships:
+. The Allocations table links TeamMember, Task, Project, and Date to capture task assignments and resource allocations.
+
+## Why the Operational Model?
+Ensures data normalization, reducing redundancy and maintaining data consistency.
+Supports transactional needs such as tracking tasks, billing, and managing project timelines.
+
+## Design Decisions
+1. Dimensional Model (Star Schema):
+. Chosen for its efficiency in handling analytical workloads.
+. Simplifies querying and supports business reporting.
+2. Entity-Relationship Diagram (ERD):
+. Provides a normalized structure to ensure operational data consistency.
+. Supports detailed tracking and management of resources and tasks.
+
+## Conclusion
+These models address both analytical and operational needs:
+. The Star Schema enables efficient querying and reporting for business intelligence.
+. The ERD supports daily operations with a robust and normalized data structure.
+By combining these two models, the solution ensures scalability, consistency, and efficiency in handling data for various purposes.
+
+
+
 
 
   
