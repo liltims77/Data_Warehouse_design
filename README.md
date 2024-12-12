@@ -2202,7 +2202,8 @@ If we have a very large datasets, such as millions of records in the ClickUp and
 
 # Data Models for Analytical and Operational Purposes
 ## Dimensional Model (Star Schema)
-![dimension_model_starschema](https://github.com/user-attachments/assets/55e6d30e-4670-4277-8846-f53f5c4910b6)
+![dimension_model_starschema](https://github.com/user-attachments/assets/42bcbf18-da34-43d3-9d5b-0c0437dd71d3)
+
 The dimensional model is designed for analytical purposes using a star schema structure. It consists of:
 
 - Fact Table: fact_allocations
