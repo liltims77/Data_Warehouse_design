@@ -2201,7 +2201,7 @@ Sorting by Total_Allocated_Hours is retained in the final step. However, since i
 If we have a very large datasets, such as millions of records in the ClickUp and Float tables, partitioning these tables by a column like Date or Role can help in faster query execution. Partitioning enables PostgreSQL to process only the relevant partitions, reducing the time and resources required for operations.
 
 # Data Models for Analytical and Operational Purposes
-## A. Dimensional Model (Star Schema)
+            ## A. Dimensional Model (Star Schema)
 ![dimension_model_starschema](https://github.com/user-attachments/assets/42bcbf18-da34-43d3-9d5b-0c0437dd71d3)
 
 The dimensional model is designed for analytical purposes using a star schema structure. It consists of:
@@ -2235,7 +2235,7 @@ Simple, scalable, and easy to understand for non-technical users.
 
 
 
-## B. Entity-Relationship Diagram (Operational Model)
+               ## B. Entity-Relationship Diagram (Operational Model)
 The ERD is designed for operational purposes, providing a normalized view of the data to support daily operations.
 
 ## Entities and Relationships:
