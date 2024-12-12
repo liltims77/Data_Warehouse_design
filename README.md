@@ -2149,6 +2149,23 @@ Fact and dimension tables are loaded into the edw(enterprise datawarehouse) sche
 - Normalizing Column Names for Consistency: Standardizing column names ensures uniformity, which is particularly important when merging datasets or automating processes. Consistent naming conventions improve readability and reduce errors during analysis.
 
 ## Validate data correctness for Fact and Dimension tables
+Data from source datasets was only cleaned and loaded to the database to validate correctness of data accross board.
+- Row Count Verification: I ensured that the number of records (count) in dimension tables matches the unique entries source data. Example comparing float source data with dim_team_member dimension table.
+  "the counts from both queries returned 8 rows".
+- Primary Key Uniqueness: Verified that primary keys in dimension tables are unique and not null. Example for dim_team_member
+  Both queries returned zero, indicating no duplicates or nulls.
+- Referential Integrity: I ensure that foreign keys in fact table correspond to valid entries in dimension tables. Example for fact_allocations referencing dim_team_member.
+  This query should return no results, indicating all Team_Member_IDs in fact_allocations are valid.
+- Data Consistency Checks: I compare aggregated values between source data and fact tables to ensure consistency. Example for Estimated_Hours
+  The sums of both queries returned (2228), confirming data consistency.
+- Date Dimension Validation: I ensure that all dates in fact table have corresponding entries in date dimension.
+This query returned no results, indicating complete date coverage.
+- Data Type and Format Validation: Confirm that data types and formats are consistent with expectations. Example for Start_Date.
+  This query identifies any dates not in the 'YYYY-MM-DD' format.
+  
+
+
+  
 
 
 
