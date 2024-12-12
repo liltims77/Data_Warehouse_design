@@ -2140,7 +2140,7 @@ except Exception as e:
 Fact and dimension tables were loaded into the edw (enterprise datawarehouse) schema where they can be used for analysis, reporting and also go get deep insight required for the organization.
 ![LOAD_INTO_EDW](https://github.com/user-attachments/assets/9639107d-e1f1-464b-bf8b-7e5ca6f6ffca)
 
-## How to ensure data integrity and cleanliness
+## Data integrity and cleanliness
 - Data Integrity refers to the accuracy, consistency, and trustworthiness of data over its entire lifecycle. It ensures that data is complete and unaltered, except through authorized modifications. This concept encompasses aspects like preventing corruption, ensuring proper access control, and maintaining data accuracy through regular validation.
 - Data Cleanliness focuses on ensuring that data is free from errors, inconsistencies, and redundancies. Clean data is devoid of duplicates, inaccuracies, and irrelevant information, making it suitable for analysis and use.
 ### Steps taken to ensure data integrity for this project
