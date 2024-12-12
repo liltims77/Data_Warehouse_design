@@ -2180,11 +2180,23 @@ https://github.com/liltims77/Data_Warehouse_design/blob/145224378bdcb829237a42b7
 
 
 # Database Query Optimization
-- This query ran at 00:00:00.264 (0.264 seconds.)
 ![Query optimization question](https://github.com/user-attachments/assets/525a5e2c-f4bc-45d0-beee-99dd5614d75b)
 
 ## Optimization Techniques
+1. Adding Indexing:
+Adding indexes on ClickUp.Name and Float.Name improves the performance of the JOIN operation by enabling quick lookups.
+Index on ClickUp.hours: Since filtering and aggregation involve SUM(c.hours), indexing this column speeds up the computation and reduces disk Input and Output.
 
+2. Adding Filter Early:
+The WHERE clause (c.hours > 0) is added before the GROUP BY to filter unnecessary rows early in the process, reducing the dataset size before aggregation.
+
+3. Using CTE is very good for aggregation data, allowing for separate optimization.
+
+4. Aggregating the Date column with MAX(c.Date) ensures no ambiguity in the final results if you need to include the date. Replace it with specific logic if you intend to use raw date values.
+
+5. Ordering by Total_Allocated_Hours is retained for the final result but occurs after filtering and aggregation, limiting the number of rows sorted.
+
+6. In cases where extremely large datasets is involved (eg when we have millions of records for Float and ClickUp data), partitioning the ClickUp and Float tables by a column like Date or Role, can help in faster query execution:
 
 
   
