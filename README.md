@@ -2180,6 +2180,10 @@ https://github.com/liltims77/Data_Warehouse_design/blob/145224378bdcb829237a42b7
 
 
 # Database Query Optimization
+- This query ran at 00:00:00.264 (0.264 seconds.)
+![Query optimization question](https://github.com/user-attachments/assets/525a5e2c-f4bc-45d0-beee-99dd5614d75b)
+
+## Optimization Techniques
 
 
 
