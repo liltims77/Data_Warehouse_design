@@ -17,7 +17,6 @@ The project involves:
 - ETL Processes: Extracting, transforming, and loading data into the data warehouse while maintaining cleanliness and consistency.
 - Optimized Queries: Writing and refining queries to ensure high performance for reporting and operational needs.
 This data warehouse is designed to support real-world business scenarios, such as resource allocation tracking, project management, and time-based performance analysis, making it a critical tool for decision-making and operational efficiency.
-## Architecture
 
 ## Technology Used
 The ETL process was done using Python in jupyter notebook and then loaded into the Postgres database. 
