@@ -10,12 +10,19 @@
  8. Managing data quality and performance overtime
 
 ## Introduction
-This is a datawarehouse project that involves the design of efficient data models that can jandle both analytical and operational needs.
+This project demonstrates the development of a robust data warehouse designed to handle both analytical and operational needs. The primary goal is to create an efficient data architecture that integrates diverse datasets into a cohesive structure, enabling seamless data analysis and supporting day-to-day business operations.
+
+The project involves:
+- Data Modeling: Designing a star schema for analytical purposes and an entity-relationship model for operational use, ensuring scalability, data integrity, and performance optimization.
+- ETL Processes: Extracting, transforming, and loading data into the data warehouse while maintaining cleanliness and consistency.
+- Optimized Queries: Writing and refining queries to ensure high performance for reporting and operational needs.
+This data warehouse is designed to support real-world business scenarios, such as resource allocation tracking, project management, and time-based performance analysis, making it a critical tool for decision-making and operational efficiency.
 ## Architecture
 
 ## Technology Used
 The ETL process was done using Python in jupyter notebook and then loaded into the Postgres database. 
 - Programming Language - Python
+- SQL
 
 ## Dataset used
 - Float Data: This dataset contains staffing and allocation information for projects,
