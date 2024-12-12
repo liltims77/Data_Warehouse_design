@@ -2236,17 +2236,18 @@ Simple, scalable, and easy to understand for non-technical users.
 
 
    ## B. Entity-Relationship Diagram (Operational Model)
+![ER_diagram_model](https://github.com/user-attachments/assets/3634078e-7165-4a4b-aa72-65ad177b36c4)
 The Entity-Relationship Diagram (ERD) represents the operational data model, focusing on how different entities relate to each other in a normalized structure. It is used for transactional systems where data integrity and consistency are critical.
 The ERD is designed for operational purposes, providing a normalized view of the data to support daily operations.
 
 ## Entities and Relationships:
 1. Entities:
-. TeamMember: Represents individual team members and their roles. Attributes include Team_Member_ID, name, role.
-. Task: Represents the tasks assigned to team members. Attributes include Task_ID, task, billable.
-. Project: Represents projects linked to tasks and clients. Attributes include Project_ID, client, project.
-. Date: Represents temporal data, like specific dates and their associated calendar attributes. Attributes include Date_ID, date, Year, Month, Week, Day, Quarter.
+- TeamMember: Represents individual team members and their roles. Attributes include Team_Member_ID, name, role.
+- Task: Represents the tasks assigned to team members. Attributes include Task_ID, task, billable.
+- Project: Represents projects linked to tasks and clients. Attributes include Project_ID, client, project.
+- Date: Represents temporal data, like specific dates and their associated calendar attributes. Attributes include Date_ID, date, Year, Month, Week, Day, Quarter.
 2. Relationships:
-. Represents the relationships between team members, tasks, projects, and dates, storing details like start date, end date, estimated hours, and billable status. The Allocations table links TeamMember, Task, Project, and Date to capture task assignments and resource allocations.
+- Represents the relationships between team members, tasks, projects, and dates, storing details like start date, end date, estimated hours, and billable status. The Allocations table links TeamMember, Task, Project, and Date to capture task assignments and resource allocations.
 
 ## Why the Operational Model?
 Ensures data normalization, reducing redundancy and maintaining data consistency.
@@ -2254,19 +2255,19 @@ Supports transactional needs such as tracking tasks, billing, and managing proje
 
 ## Design Decisions
 1. Dimensional Model (Star Schema):
-. Chosen for its efficiency in handling analytical workloads.
-. Simplifies querying and supports business reporting.
+- Chosen for its efficiency in handling analytical workloads.
+- Simplifies querying and supports business reporting.
 2. Entity-Relationship Diagram (ERD):
-. Provides a normalized structure to ensure operational data consistency.
-. Supports detailed tracking and management of resources and tasks.
-. Ensures each entity (e.g., TeamMember, Project) is stored once, with relationships defined via primary and foreign keys.
+- Provides a normalized structure to ensure operational data consistency.
+- Supports detailed tracking and management of resources and tasks.
+- Ensures each entity (e.g., TeamMember, Project) is stored once, with relationships defined via primary and foreign keys.
 
 
 ## Conclusion
 These models address both analytical and operational needs:
 The ER model is ideal for operational systems that prioritize data accuracy and consistency, while the Fact and Dimension model is designed for analytical systems, focusing on performance and ease of data aggregation. Both models complement each other in addressing different business needs.
-. The Star Schema enables efficient querying and reporting for business intelligence.
-. The ERD supports daily operations with a robust and normalized data structure.
+- The Star Schema enables efficient querying and reporting for business intelligence.
+- The ERD supports daily operations with a robust and normalized data structure.
 By combining these two models, the solution ensures scalability, consistency, and efficiency in handling data for various purposes.
 
 
