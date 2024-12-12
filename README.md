@@ -2136,8 +2136,8 @@ except Exception as e:
 ```python
 
 ```
-## Load Fact and Dimension into EDW schema for anaysis
-Fact and dimension tables are loaded into the edw(enterprise datawarehouse) schema where they can be used for analysis, reporting and also go get deep insight required for the organization.
+## Load Fact and Dimension into EDW schema for analysis
+Fact and dimension tables were loaded into the edw (enterprise datawarehouse) schema where they can be used for analysis, reporting and also go get deep insight required for the organization.
 ![LOAD_INTO_EDW](https://github.com/user-attachments/assets/9639107d-e1f1-464b-bf8b-7e5ca6f6ffca)
 
 ## How to ensure data integrity and cleanliness
@@ -2149,7 +2149,8 @@ Fact and dimension tables are loaded into the edw(enterprise datawarehouse) sche
 - Normalizing Column Names for Consistency: Standardizing column names ensures uniformity, which is particularly important when merging datasets or automating processes. Consistent naming conventions improve readability and reduce errors during analysis.
 
 ## Validate data correctness for Fact and Dimension tables
-Data from source datasets was only cleaned and loaded to the database to validate correctness of data accross board.
+Data from source datasets was also cleaned and loaded to the database to validate correctness of data accross board.
+
 1. Row Count Verification: I ensured that the number of records (count) in dimension tables matches the unique entries source data. Example comparing float source data with dim_team_member dimension table. The counts from both queries returned 8 rows.
   ![validation_1](https://github.com/user-attachments/assets/d8bbe2ef-3fec-4431-bf6e-e73277474dc8)
   
