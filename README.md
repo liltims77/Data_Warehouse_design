@@ -2210,19 +2210,19 @@ The dimensional model is designed for analytical purposes using a star schema st
 Team_Member_ID, Project_ID, Task_ID, Date_ID (Foreign Keys to dimension tables).
 start_date, end_date, estimated_hours, and billable (Metrics for analysis).
 - Dimension Tables:
-dim_team_member:
+. dim_team_member:
 Describes team members and their roles.
 Attributes: Team_Member_ID, name, role.
 Enables resource utilization analysis.
-dim_task:
+. dim_task:
 Describes tasks and their billable status.
 Attributes: Task_ID, task, billable.
 Supports task-level and billing-related analysis.
-dim_project:
+. dim_project:
 Represents projects and their associated clients.
 Attributes: Project_ID, client, project.
 Facilitates project and client performance tracking.
-dim_date:
+. dim_date:
 Provides temporal information.
 Attributes: Date_ID, Day, Week, Month, Quarter, Year, date.
 Enables time-based aggregations, such as weekly, monthly, or quarterly trends.
