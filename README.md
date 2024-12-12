@@ -2194,7 +2194,7 @@ The addition of a WHERE clause (c.hours > 0) before the GROUP BY operation helps
 3. Utilizing Common Table Expressions (CTEs): 
 A WITH clause (CTE) is used to aggregate data separately, allowing for better organization and easier optimization of the query logic. By isolating the aggregation step, the query becomes more readable and maintainable, especially in scenarios involving complex operations or reusable components. ![2  using CTE](https://github.com/user-attachments/assets/0c8cfd40-fc8e-44eb-9846-e684f3285c75)
 4. Handling Dates with Aggregation: 
-To ensure no ambiguity in results, the Date column is aggregated using MAX(c.Date) in cases where the latest date is needed. If raw date values are required, this logic can be adjusted accordingly to meet specific use cases.
+To ensure no ambiguity in results, the Date column is aggregated using MAX(c.Date) in cases where the latest date is needed. If raw date values are required, this logic can be adjusted accordingly to meet specific use cases. ![1  using_MAX_date](https://github.com/user-attachments/assets/b6359574-8e05-4427-8d54-0a7411399bc6)
 5. Optimized Sorting: 
 Sorting by Total_Allocated_Hours is retained in the final step. However, since it is performed after filtering and aggregation, the number of rows being sorted is significantly reduced, improving overall efficiency.
 6. Partitioning for Extremely Large Datasets: 
