@@ -2188,11 +2188,11 @@ To optimize the given query for performance, the following steps were taken, ens
 
 1. Indexing for Efficient Joins and Aggregations: 
 Indexes on ClickUp.Name and Float.Name: These indexes significantly enhance the performance of the JOIN operation by enabling faster lookups of matching rows. This is particularly useful for large datasets where join operations can become costly.
-Index on ClickUp.hours: Since the query involves filtering and aggregation on the hours column (SUM(c.hours)), indexing this column reduces disk I/O, improving computation speed.
+Index on ClickUp.hours: Since the query involves filtering and aggregation on the hours column (SUM(c.hours)), indexing this column reduces disk I/O, improving computation speed. ![1 adding_indexes](https://github.com/user-attachments/assets/3e159310-8f86-4bc1-8f00-d9d8d8a9cd85)
 2. Early Filtering with the WHERE Clause: 
 The addition of a WHERE clause (c.hours > 0) before the GROUP BY operation helps to filter out unnecessary rows at the earliest stage of query execution. By reducing the dataset size before aggregation, this step minimizes the computational load and speeds up query execution.
 3. Utilizing Common Table Expressions (CTEs): 
-A WITH clause (CTE) is used to aggregate data separately, allowing for better organization and easier optimization of the query logic. By isolating the aggregation step, the query becomes more readable and maintainable, especially in scenarios involving complex operations or reusable components.
+A WITH clause (CTE) is used to aggregate data separately, allowing for better organization and easier optimization of the query logic. By isolating the aggregation step, the query becomes more readable and maintainable, especially in scenarios involving complex operations or reusable components. ![2  using CTE](https://github.com/user-attachments/assets/0c8cfd40-fc8e-44eb-9846-e684f3285c75)
 4. Handling Dates with Aggregation: 
 To ensure no ambiguity in results, the Date column is aggregated using MAX(c.Date) in cases where the latest date is needed. If raw date values are required, this logic can be adjusted accordingly to meet specific use cases.
 5. Optimized Sorting: 
