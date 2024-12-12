@@ -2204,12 +2204,12 @@ If we have a very large datasets, such as millions of records in the ClickUp and
 1. Dimensional Model (Star Schema)
 The dimensional model is designed for analytical purposes using a star schema structure. It consists of:
 
--Fact Table: fact_allocations
-Purpose: Captures quantitative data such as hours allocated, billable status, and date ranges.
-Attributes:
+- Fact Table: fact_allocations
+. Purpose: Captures quantitative data such as hours allocated, billable status, and date ranges.
+. Attributes:
 Team_Member_ID, Project_ID, Task_ID, Date_ID (Foreign Keys to dimension tables).
 start_date, end_date, estimated_hours, and billable (Metrics for analysis).
--Dimension Tables:
+- Dimension Tables:
 dim_team_member:
 Describes team members and their roles.
 Attributes: Team_Member_ID, name, role.
