@@ -2137,6 +2137,8 @@ except Exception as e:
 
 ```
 ## Load Fact and Dimension into EDW schema for anaysis
-<img src="LOAD_INTO_EDW.jpg"> 
+Fact and dimension tables are loaded into the edw(enterprise datawarehouse) schema where they can be used for analysis, reporting and also go get deep insight required for an organization
+![LOAD_INTO_EDW](https://github.com/user-attachments/assets/9639107d-e1f1-464b-bf8b-7e5ca6f6ffca)
+
 
 
