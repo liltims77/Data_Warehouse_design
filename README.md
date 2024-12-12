@@ -2137,6 +2137,6 @@ except Exception as e:
 
 ```
 ## Load Fact and Dimension into EDW schema for anaysis
-<img src=".jpg">
+<img src="LOAD_INTO_EDW.jpg"> 
 
 
