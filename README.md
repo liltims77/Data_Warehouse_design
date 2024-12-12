@@ -2175,6 +2175,14 @@ https://github.com/liltims77/Data_Warehouse_design/blob/145224378bdcb829237a42b7
   
 6. Data Type and Format Validation: Confirm that data types and formats are consistent with expectations. Example for Start_Date. This query identifies any dates not in the 'YYYY-MM-DD' format.
   ![validation_6](https://github.com/user-attachments/assets/caf33979-b72e-4c98-bc3b-5a6415e58817)
+
+
+
+
+# Database Query Optimization
+
+
+
   
 
 
