@@ -2133,7 +2133,8 @@ except Exception as e:
 
     Data loaded into the database successfully!
 
-
+## Load Fact and Dimension into EDW schema for anaysis
+<img src=".jpg">
 
 ```python
 
