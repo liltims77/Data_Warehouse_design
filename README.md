@@ -2201,7 +2201,7 @@ Sorting by Total_Allocated_Hours is retained in the final step. However, since i
 If we have a very large datasets, such as millions of records in the ClickUp and Float tables, partitioning these tables by a column like Date or Role can help in faster query execution. Partitioning enables PostgreSQL to process only the relevant partitions, reducing the time and resources required for operations.
 
 # Data Models for Analytical and Operational Purposes
-1. Dimensional Model (Star Schema)
+## Dimensional Model (Star Schema)
 The dimensional model is designed for analytical purposes using a star schema structure. It consists of:
 
 - Fact Table: fact_allocations
@@ -2210,19 +2210,19 @@ The dimensional model is designed for analytical purposes using a star schema st
 Team_Member_ID, Project_ID, Task_ID, Date_ID (Foreign Keys to dimension tables).
 start_date, end_date, estimated_hours, and billable (Metrics for analysis).
 - Dimension Tables:
-. dim_team_member:
+1. dim_team_member:
 Describes team members and their roles.
 Attributes: Team_Member_ID, name, role.
 Enables resource utilization analysis.
-. dim_task:
+2. dim_task:
 Describes tasks and their billable status.
 Attributes: Task_ID, task, billable.
 Supports task-level and billing-related analysis.
-. dim_project:
+3. dim_project:
 Represents projects and their associated clients.
 Attributes: Project_ID, client, project.
 Facilitates project and client performance tracking.
-. dim_date:
+4. dim_date:
 Provides temporal information.
 Attributes: Date_ID, Day, Week, Month, Quarter, Year, date.
 Enables time-based aggregations, such as weekly, monthly, or quarterly trends.
