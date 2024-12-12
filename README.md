@@ -2150,6 +2150,7 @@ Fact and dimension tables were loaded into the edw (enterprise datawarehouse) sc
 
 ## Validate data correctness for Fact and Dimension tables
 Data from source datasets was also cleaned and loaded to the database to validate correctness of data accross board.
+https://github.com/liltims77/Data_Warehouse_design/blob/145224378bdcb829237a42b7f761424e1c677f29/upload_source_datasets.ipynb
 
 
 1. Row Count Verification: I ensured that the number of records (count) in dimension tables matches the unique entries source data. Example comparing float source data with dim_team_member dimension table. The counts from both queries returned 8 rows.
