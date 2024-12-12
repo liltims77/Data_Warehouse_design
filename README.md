@@ -2137,8 +2137,19 @@ except Exception as e:
 
 ```
 ## Load Fact and Dimension into EDW schema for anaysis
-Fact and dimension tables are loaded into the edw(enterprise datawarehouse) schema where they can be used for analysis, reporting and also go get deep insight required for an organization
+Fact and dimension tables are loaded into the edw(enterprise datawarehouse) schema where they can be used for analysis, reporting and also go get deep insight required for the organization.
 ![LOAD_INTO_EDW](https://github.com/user-attachments/assets/9639107d-e1f1-464b-bf8b-7e5ca6f6ffca)
+
+## How to ensure data integrity and cleanliness
+- Data Integrity refers to the accuracy, consistency, and trustworthiness of data over its entire lifecycle. It ensures that data is complete and unaltered, except through authorized modifications. This concept encompasses aspects like preventing corruption, ensuring proper access control, and maintaining data accuracy through regular validation.
+- Data Cleanliness focuses on ensuring that data is free from errors, inconsistencies, and redundancies. Clean data is devoid of duplicates, inaccuracies, and irrelevant information, making it suitable for analysis and use.
+### Steps taken to ensure data integrity for this project
+- Dropping Duplicates and Resetting Index: Removing duplicate records prevents redundant data from skewing analysis or insights. Resetting the index ensures data organization and proper tracking after duplicates are removed.
+- Checking and Cleaning Columns for Invalid or Missing Data: This step ensures that each column contains valid entries, replacing or removing missing values as necessary to maintain the dataset's usability and consistency.
+- Normalizing Column Names for Consistency: Standardizing column names ensures uniformity, which is particularly important when merging datasets or automating processes. Consistent naming conventions improve readability and reduce errors during analysis.
+
+## Validate data correctness for Fact and Dimension tables
+
 
 
 
