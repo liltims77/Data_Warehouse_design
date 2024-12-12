@@ -2150,29 +2150,29 @@ Fact and dimension tables are loaded into the edw(enterprise datawarehouse) sche
 
 ## Validate data correctness for Fact and Dimension tables
 Data from source datasets was only cleaned and loaded to the database to validate correctness of data accross board.
-- Row Count Verification: I ensured that the number of records (count) in dimension tables matches the unique entries source data. Example comparing float source data with dim_team_member dimension table.
+1. Row Count Verification: I ensured that the number of records (count) in dimension tables matches the unique entries source data. Example comparing float source data with dim_team_member dimension table.
   ![validation_1](https://github.com/user-attachments/assets/d8bbe2ef-3fec-4431-bf6e-e73277474dc8)
-  ###The counts from both queries returned 8 rows.
+  -The counts from both queries returned 8 rows.
   
-- Primary Key Uniqueness: Verified that primary keys in dimension tables are unique and not null. Example for dim_team_member.
+2. Primary Key Uniqueness: Verified that primary keys in dimension tables are unique and not null. Example for dim_team_member.
   ![validation_2](https://github.com/user-attachments/assets/06cfde44-dee3-4eae-a429-e8db3f5f4a41)
-  ###Both queries returned zero, indicating no duplicates or nulls.
+ -Both queries returned zero, indicating no duplicates or nulls.
   
-- Referential Integrity: I ensure that foreign keys in fact table correspond to valid entries in dimension tables. Example for fact_allocations referencing dim_team_member.
+3. Referential Integrity: I ensure that foreign keys in fact table correspond to valid entries in dimension tables. Example for fact_allocations referencing dim_team_member.
   ![validation_3](https://github.com/user-attachments/assets/c173bfe6-7992-445c-b5c0-476057d3d904)
-  ###This query should return no results, indicating all Team_Member_IDs in fact_allocations are valid.
+   -This query should return no results, indicating all Team_Member_IDs in fact_allocations are valid.
   
-- Data Consistency Checks: I compare aggregated values between source data and fact tables to ensure consistency. Example for Estimated_Hours.
+4. Data Consistency Checks: I compare aggregated values between source data and fact tables to ensure consistency. Example for Estimated_Hours.
   ![validation_4](https://github.com/user-attachments/assets/0afc6940-95ba-431d-9fdc-bf87b4d187e0)
-  ###The sums of both queries returned (2228), confirming data consistency.
+   -The sums of both queries returned (2228), confirming data consistency.
   
-- Date Dimension Validation: I ensure that all dates in fact table have corresponding entries in date dimension.
+5. Date Dimension Validation: I ensure that all dates in fact table have corresponding entries in date dimension.
   ![validation_5](https://github.com/user-attachments/assets/2006bbee-6fc2-4f17-87f1-69fcda2ac086)
-  ###This query returned no results, indicating complete date coverage.
+   -This query returned no results, indicating complete date coverage.
   
-- Data Type and Format Validation: Confirm that data types and formats are consistent with expectations. Example for Start_Date.
+6. Data Type and Format Validation: Confirm that data types and formats are consistent with expectations. Example for Start_Date.
   ![validation_6](https://github.com/user-attachments/assets/caf33979-b72e-4c98-bc3b-5a6415e58817)
-  ###This query identifies any dates not in the 'YYYY-MM-DD' format.
+   -This query identifies any dates not in the 'YYYY-MM-DD' format.
 
 
   
