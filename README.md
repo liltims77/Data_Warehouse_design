@@ -2319,6 +2319,7 @@ To handle the large dataset efficiently and ensure scalability, the following me
 - This reduced storage requirements and improved I/O performance during queries.
 6. Sorting and Filtering:
 - Data was sorted and filtered post-aggregation to minimize intermediate data shuffling and improve execution time for transformations.
+
 By combining Spark’s robust distributed processing capabilities with best practices for big data handling, this project demonstrates how large datasets can be processed at scale to extract actionable insights efficiently.
 
 ## Conclusion
