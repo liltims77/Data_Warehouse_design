@@ -2367,22 +2367,6 @@ spark
 
 
 ```python
-ls
-```
-
-    [0m[01;32m'1. using_MAX_date.png'[0m*                 [01;32mUntitled.ipynb[0m*
-     [01;32m1.adding_indexes.png[0m*                  [01;32m'archive (1).zip'[0m*
-    [01;32m'2. using CTE.png'[0m*                      [01;32mdimension_model_starschema.png[0m*
-     [01;32mBig_Data_Processing_with_Spark.ipynb[0m*   [01;32mfhvhv_tripdata_2021-01.parquet[0m*
-    [01;32m'ClickUp - clickup.csv.csv'[0m*             [01;32mquestion2.txt[0m*
-     [01;32mER_diagram_model.png[0m*                   [01;32mupload_source_datasets.ipynb[0m*
-     [01;32mETL_SCRIPTS.ipynb[0m*                      [01;32mvalidation_1.png[0m*
-    [01;32m'Float - allocations.csv.csv'[0m*           [01;32mvalidation_2.png[0m*
-    [01;32m'Global Health Statistics.csv'[0m*          [01;32mvalidation_3.png[0m*
-     [01;32mLOAD_INTO_EDW.png[0m*                      [01;32mvalidation_4.png[0m*
-     [01;32mLOAD_OLD.ipynb[0m*                         [01;32mvalidation_5.png[0m*
-    [01;32m'Query optimization question.png'[0m*       [01;32mvalidation_6.png[0m*
-    [01;32m'STARSCHEMA_AND ER_CODES.txt'[0m*
 
 
 
@@ -2448,22 +2432,6 @@ df.schema
 
 
 ```python
-ls
-```
-
-    [0m[01;32m'1. using_MAX_date.png'[0m*                 [01;32mUntitled.ipynb[0m*
-     [01;32m1.adding_indexes.png[0m*                  [01;32m'archive (1).zip'[0m*
-    [01;32m'2. using CTE.png'[0m*                      [01;32mdimension_model_starschema.png[0m*
-     [01;32mBig_Data_Processing_with_Spark.ipynb[0m*   [01;32mfhvhv_tripdata_2021-01.parquet[0m*
-    [01;32m'ClickUp - clickup.csv.csv'[0m*             [01;32mhead.parquet[0m*
-     [01;32mER_diagram_model.png[0m*                   [01;32mquestion2.txt[0m*
-     [01;32mETL_SCRIPTS.ipynb[0m*                      [01;32mupload_source_datasets.ipynb[0m*
-    [01;32m'Float - allocations.csv.csv'[0m*           [01;32mvalidation_1.png[0m*
-    [01;32m'Global Health Statistics.csv'[0m*          [01;32mvalidation_2.png[0m*
-     [01;32mLOAD_INTO_EDW.png[0m*                      [01;32mvalidation_3.png[0m*
-     [01;32mLOAD_OLD.ipynb[0m*                         [01;32mvalidation_4.png[0m*
-    [01;32m'Query optimization question.png'[0m*       [01;32mvalidation_5.png[0m*
-    [01;32m'STARSCHEMA_AND ER_CODES.txt'[0m*           [01;32mvalidation_6.png[0m*
 
 
 
