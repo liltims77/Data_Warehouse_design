@@ -2943,7 +2943,7 @@ spark.stop()
 ```
 ## Approach and Performance Considerations
 ## Approach
-This project leverages Apache Spark, a powerful distributed computing framework, to process and analyze a large dataset containing trip records. The dataset consists of millions of records, making it an ideal candidate to demonstrate Spark’s ability to handle big data efficiently.
+This project leverages Apache Spark, a powerful distributed computing framework, to process and analyze a large dataset (308924937 million records) containing trip records. The dataset consists of millions of records, making it an ideal candidate to demonstrate Spark’s ability to handle big data efficiently.
 Key transformations and analyses performed include:
 
 1. Miles Traveled by Pickup Location:
